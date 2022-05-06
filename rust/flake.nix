@@ -9,7 +9,7 @@
     utils.lib.eachDefaultSystem (system: rec {
       pkgs = import nixpkgs { inherit system; };
       devShells.default = with pkgs; mkShell {
-        buildInputs = [ cargo rustc ];
+        buildInputs = [ cargo rustc rustfmt ];
         RUST_SRC_PATH = rustPlatform.rustLibSrc;
       };
     });
