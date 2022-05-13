@@ -6,14 +6,6 @@
       default = {
         path = ./default;
       };
-
-      go = {
-        path = ./go;
-      };
-
-      rust = {
-        path = ./rust;
-      };
     };
   };
 }
